@@ -1,0 +1,11 @@
+@font-face {
+    font-family: main;
+    src: url('../font/adobemingstd-light.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: main;
+}
