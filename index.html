@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+    <link rel="icon" href="./assets/image/rexkala.png">
+    <title>Rex Kala</title>
+</head>
+
+<body>
+    <nav class="d-flex justify-content-between navbar sticky-top">
+        <div class="d-flex justify-content-start align-items-center gap-3">
+            <img src="./assets/image/nav.png" class="navbar-brand rexkala">
+            <a href="#" class="flex-column fs-5 navs text-decoration-none">
+                <img src="./assets/image/icons/account.gif" class="icons align-self-center">
+                <p class="detail">Account</p>
+            </a>
+            <a href="#" class="flex-column fs-5 navs text-decoration-none">
+                <img src="./assets/image/icons/basket.gif" class="icons align-self-center">
+                <p class="detail">Basket</p>
+            </a>
+            <a href="#" class="flex-column fs-5 navs text-decoration-none">
+                <img src="./assets/image/icons/about.gif" class="icons align-self-center">
+                <p class="detail">About Us</p>
+            </a>
+        </div>
+        <div class="d-flex align-items-center me-2 position-relative dropdowner">
+            <span class="flex-column fs-5 navs">
+                <img src="./assets/image/icons/shopping.gif" class="icons align-self-center">
+                <p class="detail">Products</p>
+            </span>
+            <div class="position-absolute drop">
+                <a href="#" class="d-flex drop-items justify-content-between gap-2 mx-2 text-decoration-none">
+                    <p class="cati">Bags</p>
+                    <img src="./assets/image/icons/bag.gif" class="drop-icon">
+                </a>
+                <a href="#" class="d-flex drop-items justify-content-between gap-2 mx-2 text-decoration-none">
+                    <p class="cati">Clothes</p>
+                    <img src="./assets/image/icons/stocks.gif" class="drop-icon">
+                </a>
+                <a href="#" class="d-flex drop-items justify-content-between gap-2 mx-2 text-decoration-none">
+                    <p class="cati">Electrical</p>
+                    <img src="./assets/image/icons/display.gif" class="drop-icon">
+                </a>
+                <a href="#" class="d-flex drop-items justify-content-between gap-2 mx-2 text-decoration-none">
+                    <p class="cati">Jewellery</p>
+                    <img src="./assets/image/icons/coins.gif" class="drop-icon">
+                </a>
+            </div>
+        </div>
+        <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
+            class="menu flex-column drop-items align-items-center me-2 justify-content-between">
+            <img src="./assets/image/icons/more.gif" class="icons">
+            <p class="detail">Menu</p>
+        </span>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                <span data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="./assets/image/icons/cross.gif" class="icons cross">
+                </span>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <a href="#" class="d-flex fs-5 navs2 gap-3 text-decoration-none">
+                        <img src="./assets/image/icons/account.gif" class="icons align-self-center">
+                        <p class="mt-3">Account</p>
+                    </a>
+                    <a href="#" class="d-flex fs-5 navs2 gap-3 text-decoration-none">
+                        <img src="./assets/image/icons/basket.gif" class="icons align-self-center">
+                        <p class="mt-3">Basket</p>
+                    </a>
+                    <a href="#" class="d-flex fs-5 navs2 gap-3 text-decoration-none">
+                        <img src="./assets/image/icons/about.gif" class="icons align-self-center">
+                        <p class="mt-3">About Us</p>
+                    </a>
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="drop-btn" type="button" data-bs-toggle="dropdown">
+                        <a href="#" class="d-flex fs-5 navs3 gap-3 text-decoration-none">
+                            <img src="./assets/image/icons/shopping.gif" class="icons align-self-center">
+                            <p class="mt-3 text-black">Products</p>
+                        </a>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <a href="#" class="d-flex drop-items justify-content-between gap-2 mx-2 text-decoration-none">
+                            <p class="cati">Bags</p>
+                            <img src="./assets/image/icons/bag.gif" class="drop-icon">
+                        </a>
+                        <a href="#" class="d-flex drop-items justify-content-between gap-2 mx-2 text-decoration-none">
+                            <p class="cati">Clothes</p>
+                            <img src="./assets/image/icons/stocks.gif" class="drop-icon">
+                        </a>
+                        <a href="#" class="d-flex drop-items justify-content-between gap-2 mx-2 text-decoration-none">
+                            <p class="cati">Electrical</p>
+                            <img src="./assets/image/icons/display.gif" class="drop-icon">
+                        </a>
+                        <a href="#" class="d-flex drop-items justify-content-between gap-2 mx-2 text-decoration-none">
+                            <p class="cati">Jewellery</p>
+                            <img src="./assets/image/icons/coins.gif" class="drop-icon">
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="here"></div>
+</body>
+
+</html>
