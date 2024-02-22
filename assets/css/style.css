@@ -116,5 +116,13 @@
     display: flex;
   }
 }
+@media only screen and (max-width: 500px) {
+  .navs {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
