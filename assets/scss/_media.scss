@@ -1,9 +1,19 @@
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:770px) {
     .navs {
         display: none;
     }
 
     .menu {
         display: flex;
+    }
+}
+
+@media only screen and (max-width:625px) {
+    .search-box {
+        display: none;
+    }
+
+    .search-box2 {
+        display: block;
     }
 }
