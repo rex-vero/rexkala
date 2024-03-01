@@ -119,10 +119,14 @@
 .search-div {
   position: absolute;
   height: 50vh;
-  width: 30vh;
+  width: 53vh;
   border: 1px solid black;
   background: #fff;
   overflow-y: auto;
+}
+
+.img {
+  height: 30vh;
 }
 
 .input-search {
