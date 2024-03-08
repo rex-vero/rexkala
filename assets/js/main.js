@@ -1,13 +1,12 @@
-const btn = document.getElementById('btn');
-btn.addEventListener('click', () => {
-    const search = document.getElementById('search');
+const search = document.getElementById('search');
+search.addEventListener('input', () => {
     const searchDiv = document.getElementById('searcher');
     searchDiv.innerHTML = '';
     fetch('https://fakestoreapi.com/products').then(res => { return res.json() }).then(data => {
         data.map(item => {
             if (item.title.toLowerCase().includes(search.value.toLowerCase())) {
-                searchDiv.classList.remove('d-none');
                 const cards = document.createElement('div');
+                searchDiv.classList.remove('d-none');
                 cards.innerHTML = `<a href="#" class="d-flex flex-column text-decoration-none">
                 <img src="${item.image}" class="img-fluid img align-self-center">
                 <div class="card-body text-center">
