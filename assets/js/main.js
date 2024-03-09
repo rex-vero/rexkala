@@ -3,8 +3,10 @@ search.addEventListener('input', () => {
     const searchDiv = document.getElementById('searcher');
     searchDiv.innerHTML = '';
     fetch('https://fakestoreapi.com/products').then(res => { return res.json() }).then(data => {
+        let notFound;
         data.map(item => {
-            if (item.title.toLowerCase().includes(search.value.toLowerCase())) {
+            notFound = false;
+            if (item.title.toUpperCase().includes(search.value.toUpperCase())) {
                 const cards = document.createElement('div');
                 searchDiv.classList.remove('d-none');
                 cards.innerHTML = `<a href="#" class="d-flex flex-column text-decoration-none">
@@ -17,8 +19,17 @@ search.addEventListener('input', () => {
                 </div>
                 </a>`;
                 searchDiv.appendChild(cards);
+            } else {
+                notFound = true;
             }
         })
+        if (notFound && searchDiv.innerHTML === '') {
+            searchDiv.classList.remove('d-none');
+            const cards = document.createElement('div');
+            cards.setAttribute('class', 'd-flex hight justify-content-center align-items-center');
+            cards.innerHTML = `<p class="fs-2">Not Found...</p>`;
+            searchDiv.appendChild(cards);
+        }
         if (search.value === '') {
             searchDiv.classList.add('d-none');
         }

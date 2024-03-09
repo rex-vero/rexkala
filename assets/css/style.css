@@ -125,6 +125,10 @@
   overflow-y: auto;
 }
 
+.hight {
+  height: inherit;
+}
+
 .img {
   height: 30vh;
 }
